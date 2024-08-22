@@ -6,7 +6,7 @@ Check that your instance has passed its status checks. It can take a few minutes
 
 Get the required instance details.
 
-Locate the private key and set permissions.
+Locate the private key and set permissions (chmod 400 yourPublicKeyFile.pem).
 
 (Optional) Get the instance fingerprint.
 
