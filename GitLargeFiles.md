@@ -1,6 +1,8 @@
 Error: RPC failed; HTTP 400 curl 22 The requested URL returned error: 400 Bad Request
 Solution: 
+
 git config http.postBuffer 524288000
+
 git pull && git push -u origin main
 
 #########################################################################################################
