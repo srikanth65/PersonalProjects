@@ -33,6 +33,7 @@ prerequiste:
 2. set permissions to " chmod 400 /path/to/yourKeyFile.pem"
 
 **Few notes for beginning:**
+
 Note the spaces between the three parameters given after the -i
 
 scp stands for secure copy protocol. Knowing the words makes it easier to remember the command.
