@@ -27,3 +27,32 @@ Using the `scp` command allows you to efficiently and securely transfer files fr
 Example Command
 Suppose your key pair file is in `~/.ssh/my-key-pair.pem`, the file you want to copy is `~/Documents/myfile.txt`, and you want to copy it to the home directory of an Amazon Linux instance with the public DNS `ec2–12–34–56–78.compute-1.amazonaws.com`:
 ```scp -i ~/.ssh/my-key-pair.pem ~/Documents/myfile.txt ec2-user@ec2–12–34–56–78.compute-1.amazonaws.com:~```
+
+prerequiste: 
+1. you must have YourKeyFile.pem
+2. set permissions to " chmod 400 /path/to/yourKeyFile.pem"
+
+**Few notes for beginning:**
+Note the spaces between the three parameters given after the -i
+scp stands for secure copy protocol. Knowing the words makes it easier to remember the command.
+-i dictates that you need to give the .pem file as the next param. If there is no -i, than you do not need a .pem.
+Note the :~ at the end of the destination for the EC2 instance.
+########################################################################################
+
+**Send file from Local to Server:**
+scp -i .ssh/awsinstance.pem my_local_file ubuntu@XX.XXX.XXX.XXX:/home/ubuntu
+
+**Download file from Server to Local:**
+scp -i .ssh/awsinstance.pem ubuntu@XX.XXX.XXX.XXX:/home/ubuntu/server_file .
+
+**if you want to copy a folder use the "-r" parameter -r (for directory)**
+scp -r -i ~/pathToPemFile/AmazonKey.pem /Users/yourUserName/desktop/yourFolderName ec2-user@ec2-50-17-16-67.compute-1.amazonaws.com:~/.
+
+scp -i /path/to/your/.pemkey -r /copy/from/path user@server:/copy/to/path
+-r if it's a directory
+
+
+
+
+
+
