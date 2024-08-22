@@ -34,8 +34,11 @@ prerequiste:
 
 **Few notes for beginning:**
 Note the spaces between the three parameters given after the -i
+
 scp stands for secure copy protocol. Knowing the words makes it easier to remember the command.
+
 -i dictates that you need to give the .pem file as the next param. If there is no -i, than you do not need a .pem.
+
 Note the :~ at the end of the destination for the EC2 instance.
 ########################################################################################
 
