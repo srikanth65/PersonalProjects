@@ -94,11 +94,17 @@ Below are the most commonly used types of DNS records and their meaning.
 
 Type	- Name - 	Description
 A	- Host address - 	The most basic and the most commonly used DNS record. It translates human-friendly domain names into computer-friendly IP addresses.
+
 AAAA -	IPv6 host address -	Same as A but for IPv6 (a host address that can have more than one IP address).
+
 CNAME -	Canonical name for an alias -	Maps a name to another name. It should only be used when there are no other records on that name.
+
 ALIAS -	Auto resolved alias	- Maps a name to another name, but can coexist with other records on that name.
+
 MX -	Mail eXchange	- Specifies the e-mail server(s) responsible for a domain name.
+
 NS -	Name Server	- Identifies the DNS servers responsible for a zone. One NS record for each DNS server in a zone.
+
 TXT	- Descriptive Text -	Holds general information about a domain name such as who is hosting it, contact person, phone numbers, etc. Widely used for domain ownership verification.
 
 
