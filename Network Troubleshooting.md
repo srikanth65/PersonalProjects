@@ -51,12 +51,16 @@ HTTP headers allow the client to add additional information to a request for pur
 Headers fall into 4 general contexts:
 
 General Header: A header that works for both response and requests messages.
+
 Request Header: A header that only applies to request messages from a client.
+
 Response Header: A header that only applies to responses from a server.
+
 Entity Header: A header that gives information about the entity itself or the resource requested.
+
 Headers are case-insensitive in the structure Name: Value.
 
-HTTP Methods
+**HTTP Methods**
 
 You’ve probably heard about Hypertext Transfer Protocol, also known as HTTP. HTTP allows you to interact with Web pages, HTML documents, and APIs. It is the foundation of any data exchange on the Internet
 An HTTP request is a request message from a client to a server asking for access to a resource.
@@ -64,12 +68,19 @@ An HTTP request is a request message from a client to a server asking for access
 There are 7 main HTTP request methods:
 
 Name	Desription
+
 GET	    Requests the data of an object. The data entity is returned in a response body.
+
 HEAD	  Identical to GET, but without a response body. More for meta information or testing.
+
 POST	  Submits a change to an object.
+
 PUT	    Replaces an object.
+
 PATCH	  Updates an object.
+
 OPTIONS	Describes the communication options for an object.
+
 DELETE	Deletes an object.
 
 **Routing**
