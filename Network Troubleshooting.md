@@ -44,6 +44,7 @@ https://yourdevopsmentor.com/wp-content/uploads/2022/08/image-8.png![image](http
 - The DNS network translates computer language to human language and gives names to domains across the network. You can do lookups to find the IP address associated with a certain DN
 
 **HTTP**
+
 **HTTP Headers**
 
 HTTP headers allow the client to add additional information to a request for purposes such as authentication, caching, and specifying the type of client device sending the request. Headers are widely used to control traffic and implement features such as canary releases, blue-green deployments, and a/b testing.
