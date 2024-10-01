@@ -120,9 +120,29 @@ NS -	Name Server	- Identifies the DNS servers responsible for a zone. One NS rec
 TXT	- Descriptive Text -	Holds general information about a domain name such as who is hosting it, contact person, phone numbers, etc. Widely used for domain ownership verification.
 
 
+**seven OSI layers are**:
 
+Physical Layer: The physical cable or wireless connection itself. It converts raw data into electrical, radio, or optical signals between the connected devices.
 
+Data Link Layer: Transfers data from one host to another on the same network.
 
+Network Layer: Transfers data from one host to another across different networks.
+
+Transport Layer: Acknowledges successful data transmission and retransmits data if the transmission failed.
+
+Session Layer: Builds, manages, and terminates connections between hosts.
+
+Presentation Layer: Manages processes, such as data encoding, encryption, and compression.
+
+Application Layer: The final, uppermost layer with direct human-computer interaction. You interact with this everyday. For example, http, email, and DNS are all application-layer protocols.
+
+**Key concepts in the TCP/IP model**
+
+The TCP/IP model is a reliable set of connection-based end-to-end Internet Protocols (IP) that connects applications in a network and facilitates data exchange between them. A protocol defines how data is passed between computers.
+
+The TCP/IP model simply combines OSI layers 5, 6, and 7 into one Application Layer and OSI layers 1 and 2 into a single Network Access Layer
+
+There are **two types of routing in the TCP/IP model**: static and dynamic. In Static routing, you manually maintain the routing table. This is good when you only need to communicate between a few networks. The more networks you add, though, the more challenging it is to manually keep track of everything. In this case, you’d use dynamic routing, where the routing table gets automatically updated.
 
 
 
