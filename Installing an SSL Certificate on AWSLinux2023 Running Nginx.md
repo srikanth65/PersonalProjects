@@ -18,6 +18,7 @@ domain used:  aws2day.online
 
 record created as :  demo.aws2day.online
 
+Also make sure your network firewall has a rule for HTTP, HTTPS traffic, namely the TCP port 80, 443 should be open
 
 **Instructions**:
 
