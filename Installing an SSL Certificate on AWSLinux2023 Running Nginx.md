@@ -113,3 +113,9 @@ sudo systemctl reload nginx
 
 Also make sure your network firewall has a rule for HTTPS traffic, namely the TCP port 443 should be open.
 
+You can also check the web server from the command line using the curl utility:
+
+curl https://demo.linuxtrainingacademy.com
+
+If the certificate is valid, curl will return the contents of the website without any errors orwarnings.
+
