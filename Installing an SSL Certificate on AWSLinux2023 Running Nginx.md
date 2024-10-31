@@ -78,7 +78,7 @@ Open up a web browser and connect to your domain name. In this example, I am usi
 
 If you type your domain name with https, for example
 
-https://demo.linuxtrainingacademy.com , you will see that the web page will not open. This is because Nginx is only configured to allow HTTP traffic by default.
+https://demo.aws2day.online , you will see that the web page will not open. This is because Nginx is only configured to allow HTTP traffic by default.
 
 **Step 5**: 
 
