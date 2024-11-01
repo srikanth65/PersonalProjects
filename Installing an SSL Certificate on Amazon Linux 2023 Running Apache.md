@@ -143,6 +143,8 @@ sudo vi /etc/httpd/conf.d/demo.aws2day.online.conf
 
 2. Add the following configuration for the virtual host on port 80:
 
+![image](https://github.com/user-attachments/assets/ab5fc85c-d450-4bc8-9bf3-73feaec20051)
+
 <VirtualHost *:80>
     ServerName demo.aws2day.online
     DocumentRoot /var/www/html
