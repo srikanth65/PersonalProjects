@@ -145,24 +145,6 @@ sudo vi /etc/httpd/conf.d/demo.aws2day.online.conf
 
 ![image](https://github.com/user-attachments/assets/ab5fc85c-d450-4bc8-9bf3-73feaec20051)
 
-<VirtualHost *:80>
-
-    ServerName demo.aws2day.online
-    
-    DocumentRoot /var/www/html
-
-    <Directory /var/www/html>
-    
-        AllowOverride All
-        
-    </Directory>
-    
-    ErrorLog /var/log/httpd/demo.aws2day.online-error.log
-    
-    CustomLog /var/log/httpd/demo.aws2day.online-access.log combined
-    
-</VirtualHost>
-
 
 3. Save and exit the file
 
