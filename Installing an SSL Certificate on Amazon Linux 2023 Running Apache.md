@@ -143,25 +143,18 @@ sudo vi /etc/httpd/conf.d/demo.aws2day.online.conf
 
 2. Add the following configuration for the virtual host on port 80:
 
-"""
 <VirtualHost *:80>
-
     ServerName demo.aws2day.online
-    
     DocumentRoot /var/www/html
 
     <Directory /var/www/html>
-    
         AllowOverride All
-        
     </Directory>
     
     ErrorLog /var/log/httpd/demo.aws2day.online-error.log
-    
     CustomLog /var/log/httpd/demo.aws2day.online-access.log combined
-    
-    
-</VirtualHost> """
+</VirtualHost>
+
 
 3. Save and exit the file
 
@@ -172,13 +165,12 @@ sudo systemctl restart httpd
 Step C: Run Certbot Again
 
 Now that a virtual host is configured, you can re-run Certbot to request the certificate:
+
 sudo certbot --apache -d demo.aws2day.online
 
 Step D: Verify the SSL Setup
 
 Once Certbot completes successfully, access https://demo.aws2day.online to confirm the SSL certificate is working. Certbot should also automatically configure the HTTPS virtual host and redirect HTTP traffic to HTTPS
-
-
 
 
 
@@ -262,7 +254,9 @@ For reference, below is the crontab format. The first five fields are the time s
 
 Configure Auto Renewal Using Systemd Timers - OPTIONAL
 
-NOTE: You only need to schedule automatic SSL cert renewals using either the cron method or the systemd timers method, not both.
+**NOTE: You only need to schedule automatic SSL cert renewals using either the cron method or the systemd timers method, not both.**
+
+
 The certbot package includes a certbot-renew systemd service. When you start the service, it attempts to renew the SSL certs on the system just as if you executed " certbot renew" on the command line. This service is not like most services because it executes and then immediately exits. It is not a background service that runs all the time.
 
 systemctl start certbot-renew.service
