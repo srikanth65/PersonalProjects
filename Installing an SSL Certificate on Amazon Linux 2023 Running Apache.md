@@ -143,7 +143,7 @@ sudo vi /etc/httpd/conf.d/demo.aws2day.online.conf
 
 2. Add the following configuration for the virtual host on port 80:
 
-
+'''
 <VirtualHost *:80>
 
     ServerName demo.aws2day.online
@@ -160,7 +160,8 @@ sudo vi /etc/httpd/conf.d/demo.aws2day.online.conf
     
     CustomLog /var/log/httpd/demo.aws2day.online-access.log combined
     
-</VirtualHost>
+    
+</VirtualHost> '''
 
 3. Save and exit the file
 
