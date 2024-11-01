@@ -244,13 +244,7 @@ Save your changes. To check that the cron configuration has been updated run the
 
 For reference, below is the crontab format. The first five fields are the time specification. They are minutes, hour, day of the month, month, and day of the week. After the time specification, you provide the command to be executed. The command will only be executed when all of the time specification fields match the current date and time. Typically, one or more of the time specification fields will contain an asterisk (*) which matches any time or date for that field.
 
-* * * * * command
-| | | | |
-| | | | +-- Day of the Week (0-6)
-| | | +---- Month of the Year (1-12)
-| | +------ Day of the Month (1-31)
-| +-------- Hour (0-23)
-+---------- Minute (0-59)
+<img width="347" alt="Screenshot 2024-11-01 at 11 00 57 AM" src="https://github.com/user-attachments/assets/da414183-3ec1-43f2-82b7-5e9cd0a818ed">
 
 Configure Auto Renewal Using Systemd Timers - OPTIONAL
 
