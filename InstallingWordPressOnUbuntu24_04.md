@@ -59,11 +59,17 @@ sudo apt install -y php-fpm
 WordPress requires several PHP modules to function correctly. They are:
 
 ● MySQL for connecting to the MySQL database.
+
 ● cURL for making remote requests.
+
 ● Mbstring to handle multibyte strings.
+
 ● ImageMagick to perform actions such as image resizing.
+
 ● XML to provide XML support.
+
 ● Zip to unzip plugins, themes, and WordPress update packages.
+
 Install the required PHP modules.
 
 sudo apt install -y php-mysql php-curl php-mbstring php-imagick php-xml php-zip
