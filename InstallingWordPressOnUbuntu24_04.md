@@ -230,32 +230,9 @@ Congratulations
 You've successfully installed and configured WordPress on Ubuntu!
 
 =========================================
-**Configure Nginx Web server if you have own domain**
 
-Path: sudo nano /etc/nginx/site-enabled/wordpress
+<img width="718" alt="Screenshot 2025-01-03 at 7 49 03 AM" src="https://github.com/user-attachments/assets/da835d1f-d830-41f9-8159-fdebec3f010b" />
 
-server {
-    listen 80;
-    listen [::]:80;
-    server_name  example.com www.example.com;
-    root /var/www/html/wordpress;
-    index  index.php index.html index.htm;
-    access_log /var/log/nginx/wpress_access.log;
-    error_log /var/log/nginx/wpress_error.log;
-
-    client_max_body_size 100M;
-    autoindex off;
-    location / {
-        try_files $uri $uri/ /index.php?$args;
-    }
-
-    location ~ \.php$ {
-         include snippets/fastcgi-php.conf;
-         fastcgi_pass unix:/var/run/php/php-fpm.sock;
-         fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
-         include fastcgi_params;
-    }
-}
 
 Note - Remember to replace example.com with your own domain name and /var/run/php/php7.4-fpm.sock with /var/run/php/php8.3-fpm.sock for PHP 8.0. Save the file and exit.
 
@@ -266,8 +243,7 @@ Restart:
 sudo systemctl restart nginx
 
 ==================================
-HTTPS Access the WordPress Web Installer
-==================================
+**HTTPS Access the WordPress Web Installer**
 
 **Installing certbot**
 
