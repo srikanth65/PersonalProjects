@@ -57,6 +57,7 @@ WordPress is written in PHP, so we need to install PHP. Specifically, we're goin
 sudo apt install -y php-fpm
 
 WordPress requires several PHP modules to function correctly. They are:
+
 ● MySQL for connecting to the MySQL database.
 ● cURL for making remote requests.
 ● Mbstring to handle multibyte strings.
@@ -205,29 +206,8 @@ On the screen that appears select your language and click "Continue."
 
 On the next screen, simply click "Let's Go!"
 
-Next, fill in the database connection details as follows:
-Database Name: wordpress
-Username: wordpress
-Password: wordpress123
-Database Host: localhost
-Table Prefix: wp_
-Click the "Submit" button.
-On the next screen, click "Run the installation".
-Next, fill in the blog details as follows:
-Site Title: My Fun Blog
-Username: admin
-Password: admin123
-Confirm Password: Check "Confirm use of weak password"
-Your Email: your_email@your_domain.com
-Click the "Install WordPress" button.
-You should now be on a screen that says "Success!" Click the "Log In" button.
-Log into the WordPress administration dashboard with your credentials.
-Username: admin
-Password: admin123
-Click "Log In".
+<img width="729" alt="Screenshot 2025-01-03 at 7 50 35 AM" src="https://github.com/user-attachments/assets/c350fdc4-455e-4176-b319-884ac3ab860e" />
 
-Congratulations
-You've successfully installed and configured WordPress on Ubuntu!
 
 =========================================
 
