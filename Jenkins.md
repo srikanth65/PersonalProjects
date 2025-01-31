@@ -314,3 +314,34 @@ backend bk_jenkins
 
 
 systemctl restart haproxy 
+
+
+**Backup and Restore Jenkins:**
+
+- S3, EFS, ZIP, Tarz, external storage
+- 
+- netbackup, amanda 
+
+- plugins : periodic backup
+
+mkdir /opt/backupdir-jenkins
+
+chown -R jenkins:jenkins /opt/backdir-jenkins
+
+jenkins- dashboard - periodic Backup Manager - configure
+
+Temporary Directory: /tmp
+
+backup schedule(cron): 30 * * * *
+
+max backups: 5
+
+store no older than: 7
+
+File Management: Full Backup
+
+Storage Strategy: TazGzStorage
+
+Backup Location: /opt/backup-jenkins
+
+
