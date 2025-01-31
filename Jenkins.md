@@ -272,18 +272,31 @@ vi /etc/haproxy/haproxy.cfg
 # remove everything below defaults dG
 
 defaults
+
   log global
+
   maxconn 2000
+  
   mode http
+  
   option redispatch
+  
   option forwardfor
+  
   option http-server-close
+  
   retries 3
+  
   timeout http-request 10s
+  
   timeout queue 1m
+  
   timeout connect 10s
+  
   timeout client 1m
+  
   timeout server 1m
+  
   timeout check 10s
 
 frontend ft_jenkins
