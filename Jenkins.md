@@ -251,7 +251,7 @@ vi reload.sh
 
 crumb_id=$(curl -s 'http://localhost:8080/crumbIssuer/api/xml?xpath=concat(//crumbRequestField,":",//crumb)' -u admin:admin)
 
-curl -s -XPOST 'http://localhost:8080/reload' -u admin:admin -H "$crum_id"
+curl -s -XPOST 'http://localhost:8080/reload' -u admin:admin -H "$crumb_id"
 
 chmod +x reload.sh
 
@@ -259,7 +259,7 @@ Jenkins - manage Jenkins - Security - CSRF Protection - Enable Proxy Compatabili
 
 vi /etc/cron.d/jenkinsreload
 
-*/1 * * * * root root /root/reload.sh
+*/1 * * * * root root /bin/bash /root/reload.sh
 
 systemctl status crond
 
