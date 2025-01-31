@@ -201,12 +201,16 @@ defaults
   timeout check 10s
 
 frontend ft_jenkins
+
   bind *:80
+  
   default_backend bk_jenkins
  
 
 backend bk_jenkins
+
   server  ec2-23-22-204-84.compute-1.amazonaws.com 23.22.204.84:8080 check
+  
   server  ec2-54-208-113-155.compute-1.amazonaws.com 54.208.113.155:8080 check backup
 
 
