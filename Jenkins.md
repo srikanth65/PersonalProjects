@@ -348,7 +348,9 @@ Backup Location: /opt/backup-jenkins
 
 
 **Jenkins Security**
+
 Authentication
+
 - LDAP Authorization 
 - RB Authorization strategy 
 - Admin lock out: vi /var/lib/jenkins/config.xml , set usesecurity to false
